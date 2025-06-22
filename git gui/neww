@@ -1,0 +1,14 @@
+/* subname.c */
+#include <stdio.h>
+#include <string.h>
+
+void get_username(char *firstname, char *lastname)
+{
+    printf("Enter first name: ");
+    fgets(firstname, 255, stdin);
+    firstname[strlen(firstname)-1] = '\0';
+
+    printf("Enter last name: ");
+    fgets(lastname, 255, stdin);
+    lastname[strlen(lastname)-1] = '\0';
+}
